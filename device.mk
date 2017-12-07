@@ -215,12 +215,17 @@ PRODUCT_PACKAGES += \
     android.hardware.health@1.0-convert \
     android.hardware.health@1.0-service
 
-# Ims
+# HIDL
 PRODUCT_PACKAGES += \
-    ims-ext-common
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0
 
 # HWUI
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
+
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common
 
 # Input
 PRODUCT_COPY_FILES += \
