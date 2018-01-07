@@ -280,6 +280,10 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
     libandroid_net
 
+# Offline charging animation
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
@@ -297,7 +301,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl \
     android.hardware.power@1.1-service-qti
-
+    
 # QMI
 PRODUCT_PACKAGES += \
     libjson
