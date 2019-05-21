@@ -157,6 +157,10 @@ PRODUCT_PACKAGES += \
     XiaomiDirac \
     AndroidClock
 
+# Disable rescue party
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.disable_rescue=true
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
